@@ -1,0 +1,47 @@
+import random
+loop = True
+range_start = ""
+range_end = "" 
+
+#To ask user for the first number of the range
+while range_start.isdigit() == False:
+    range_start = input("Please input a number for the beginning of the range: ")
+    
+range_start= int(range_start)
+
+#To ask user fo the last number of the range 
+while range_end.isdigit() == False:
+    range_end = input("Please input a number for the end of the range: ")
+    
+    #Ensures that the last number is greater than the first number
+    if range_end.isdigit() == True: 
+        if int(range_end) < range_start:
+            range_end = ""
+        
+range_end = int(range_end)
+
+#To randomly pick a number within the range set by the user
+random_number = random.randint(range_start, range_end)
+print(random_number)
+
+while loop == True:
+    #Asks the user to guess a number within the range set by the user
+    guess = input("Please guess an integer in the range (" + str(range_start) + "-" + str(range_end) +"):")
+    
+    #Makes sure that the input is actually a number
+    if guess.isdigit():
+        
+        guess_int = int(guess)
+        
+        #Checks whether the guess matches the random number
+        if guess_int < random_number:
+            print("Incorrect. The number is higher.")
+        elif guess_int > random_number:
+            print("Incorrect. The number is lower.")
+        elif guess_int == random_number:
+            print("Congratulations! You guessed the number.")
+            loop = False
+            
+    #If the user enters a non-numeric value
+    else:
+        print("Error. Only integers are allowed.")
