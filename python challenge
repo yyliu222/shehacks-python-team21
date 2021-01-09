@@ -7,7 +7,7 @@ range_end = ""
 while range_start.isdigit() == False:
     range_start = input("Please input a positive number for lower bound of the range: ")
     if range_start.isdigit() == False:
-        print("Invalid lower bound value")
+        print("Invalid lower bound value.")
     
 range_start= int(range_start)
 
@@ -17,15 +17,14 @@ while range_end.isdigit() == False:
     
     #Ensures that the last number is greater than the first number
     if range_end.isdigit() == True: 
-        if int(range_end) < range_start:
-            print("Invalid upper bound value")
+        if int(range_end) <= range_start:
+            print("Invalid upper bound value.")
             range_end = ""
         
 range_end = int(range_end)
 
 #To randomly pick a number within the range set by the user
 random_number = random.randint(range_start, range_end)
-print(random_number)
 
 while loop == True:
     #Asks the user to guess a number within the range set by the user
@@ -48,4 +47,3 @@ while loop == True:
     #If the user enters a non-numeric value
     else:
         print("Error. Only integers are allowed.")
-
