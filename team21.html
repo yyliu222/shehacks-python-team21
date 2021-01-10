@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="team21style.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div style="background-color: #ffffff;" class= "w3-top">
+<!-- <div class="w3-top"> <div style> background-color: #ffffff </p style> -->
+    <a href="#home" class="w3-bar-item w3-button">Cactus Food Reviews</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <div class="dropdown">
+            <span class="w3-bar-item w3-button">Reviews</span>
+            <div class="dropdown-content">
+                <a href="#restaurant1" class="w3-bar-item w3-button">Maha's</a>
+                <a href="#restaurant2" class="w3-bar-item w3-button">Greenwood</a>
+                <a href="#restaurant3" class="w3-bar-item w3-button">Chinatown</a>
+            </div>
+        </div>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+    </div>
+</div>
+
+<!-- <div class="w3-col m6 w3-padding-large"></div> -->
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" id="home">
+  <img class="w3-image" src="landing.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-middle w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Cactus Food Reviews</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Review Section -->
+  <div class="w3-row w3-padding-64" id="restaurant1">
+    <div class="w3-col m6 w3-padding-large">
+     <img src="restaurant1.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Maha's Brunch</h1><br>
+      <h5 class="w3-center">4/5 Stars</h5>
+      <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="restaurant2">
+    <div class="w3-col m6 w3-padding-large">
+     <img src="restaurant2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Greenwood Pizzeria</h1><br>
+        <h5 class="w3-center">3/5 Stars</h5>
+        <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+  </div>
+  
+  <div class="w3-row w3-padding-64" id="restaurant3">
+    <div class="w3-col m6 w3-padding-large">
+     <img src="restaurant3.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Chinatown Beef Noodle Soup</h1><br>
+        <h5 class="w3-center">5/5 Stars</h5>
+        <p class="w3-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+  </div>
+  <hr>
+  
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">About Cactus Food Reviews</h1><br>
+      <h4>Our team loves food!</h4>
+      <p class="w3-text-grey">A blog for anyone who loves food and everyone who doesn't, we strive to share the world with you! We are a small team originated in Toronto, founded in 2020. We have passion for good food and truly enjoy what we do. Now, let us hit up some restaurants! - Chenxin, Yiyong, Cheryl and Cathy</p><br>  
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="team.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+  
+  <ul class="cloud" role="navigation" aria-label="Webdev tag cloud">
+    <li><a data-weight="4">Brunch</a></li>
+    <li><a data-weight="2">Toronto</a></li>
+    <li><a data-weight="5">Pizza</a></li>
+    <li><a data-weight="8">Cactus</a></li>
+    <li><a data-weight="6">Food</a></li>
+    <li><a data-weight="4">Taste</a></li>
+    <li><a data-weight="5">Price</a></li>
+    <li><a data-weight="6">Worth</a></li>
+    <li><a data-weight="3">Experience</a></li>
+    <li><a data-weight="7">Rating</a></li>
+    <li><a data-weight="8">Reviews</a></li>
+  </ul>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
